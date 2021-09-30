@@ -4,7 +4,7 @@
   --gris: #757575;
   --primario: rgb(207, 74, 118);
 
-  --fuente-principal: 3.8rem;
+  --fuente-principal: 3.6rem;
 }
 
 html{
@@ -12,11 +12,13 @@ html{
 }
 body{
     font-size: 16px; /*1rem =10px*/
+    font-family: 'Krub', sans-serif; /*estilos de letra*/
 }
 .titulo{
     text-align: center;  
     color:rgb(207, 74, 118);
     font-size: var(--fuente-principal);  
+    
 }
 .titulo span{
     font-size: 20px;
