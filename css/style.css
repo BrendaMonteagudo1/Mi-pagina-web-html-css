@@ -2,7 +2,8 @@
   --blanco: #ffffff;
   --oscuro: #212121;
   --gris: #757575;
-  --primario: rgb(207, 74, 118);
+  --primario: rgb(209, 88, 129);
+  
 
   --fuente-principal: 3.6rem;
 }
@@ -16,12 +17,41 @@ body{
 }
 .titulo{
     text-align: center;  
-    color:rgb(207, 74, 118);
+
     font-size: var(--fuente-principal);  
     
 }
 .titulo span{
     font-size: 20px;
 }
+.contenedor{
+    width: 120rem; /*centra el contenido del navegador principal*/
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    /*este codigo puede achicarse en magin:0 auto // por defoult repite los valores*/
+}
+.nav-bg{
+    background-color:rgb(209, 88, 129);
+}
+.navegacion-principal{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+}
+.navegacion-principal a{
+   color: var(--blanco);
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: bold; 
+   padding: 1rem;
+}
+.navegacion-principal a:hover{
+background-color:rgb(85, 158, 192);
+color: var(--oscuro);
+}
+
 
 
