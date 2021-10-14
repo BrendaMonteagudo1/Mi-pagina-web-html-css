@@ -1,7 +1,7 @@
 :root {  /*se colocan los valores que se reutilizaran*/
   --blanco: #ffffff;
   --oscuro: #212121;
-  --gris: #757575;
+  --gris: hsl(0, 5%, 76%);
   --grisClaro: #DFE9F3;
   --primario: rgb(209, 88, 129);
   
@@ -122,7 +122,54 @@ color: var(--oscuro);
 .contenido-hero p{
     color: var(--blanco);
 }
-.ubicacion{
+.contenido-hero .ubicacion{
     display: flex;
     align-items: flex-end;
+}
+/* servicios*/
+@media (min-width:768px){
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ; /* o puede hacerce asi: 1fr 1fr 1fr */
+    column-gap: 1rem;
+ }
+}
+.servicio{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.servicio h3{
+color: var(--primario);
+}
+.servicio p{
+    line-height: 2;
+}
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color:rgb(121, 197, 233);
+    border-radius: 50%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+/* contacto*/
+.formulario{
+background-color: var(--gris);
+width: min(60rem, 100%); /*utiliza el valor mas pequeno*/
+margin: 0 auto;
+padding: 2rem;
+border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario) ;
 }
